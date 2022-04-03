@@ -60,3 +60,7 @@ li {
 .space {
     flex-grow: 1;
 }
+
+.check:checked + span {
+    text-decoration: line-through;
+}
