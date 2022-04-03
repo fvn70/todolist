@@ -11,7 +11,7 @@
         <header>To-Do List</header>
         <section class="add-task">
             <input id="input-task" type="text" name="task">
-            <button id="add-task-button">Add task</button>
+            <button id="add-task-button" onclick="addTask()">Add task</button>
         </section>
         <section>
             <ul id="task-list">
@@ -19,23 +19,24 @@
                     <input class="check" type="checkbox">
                     <span class="task">Email David</span>
                     <span class="space"></span>
-                    <button class="delete-btn">x</button>
+                    <button class="delete-btn" onclick="delTask(this)">x</button>
                 </li>
                 <li>
                     <input class="check" type="checkbox">
                     <span class="task">Create ideal user persona guide</span>
                     <span class="space"></span>
-                    <button class="delete-btn">x</button>
+                    <button class="delete-btn" onclick="delTask(this)">x</button>
                 </li>
                 <li>
                     <input class="check" type="checkbox">
                     <span class="task">Set up A/B test</span>
                     <span class="space"></span>
-                    <button class="delete-btn">x</button>
+                    <button class="delete-btn" onclick="delTask(this)">x</button>
                 </li>
             </ul>
         </section>
     </div>
 </div>
+<script src="code.js"></script>
 </body>
 </html>
