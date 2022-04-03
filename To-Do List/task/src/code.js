@@ -1,3 +1,14 @@
+let chk = document.getElementsByClassName('check');
+let span = document.getElementsByClassName('task');
+for (let i = 0; i < chk.length; i++) {
+    chk[i].addEventListener('click', function () {
+        if (chk[i].checked) {
+            span[i].style.textDecoration = 'line-through';
+        } else {
+            span[i].style.textDecoration = 'none';
+        }
+    })
+}
 
 function delTask(obj) {
     // alert('Delete task ' + obj.parentNode.nodeName);
